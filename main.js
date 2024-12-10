@@ -81,7 +81,8 @@ typeEffect();
 
 document.addEventListener("DOMContentLoaded" ,() => {
   const animatedText = document.getElementById("about-me");
-  const foto = document.getElementById("foto-1")
+  const foto1 = document.getElementById("foto-1")
+
   let see = false;
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -89,11 +90,12 @@ document.addEventListener("DOMContentLoaded" ,() => {
       if(entry.isIntersecting == !see) {
 
         animatedText.classList.add("visible");
-        foto.classList.add("visible1")
+      foto1.classList.add("visible1")
+
       } else if(entry.isIntersecting == see) {
 
         animatedText.classList.remove("visible")
-        foto.classList.remove("visible1")
+        foto1.classList.remove("visible1")
       }
     });
 
