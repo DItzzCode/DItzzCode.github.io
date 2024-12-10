@@ -79,47 +79,23 @@ function typeEffect() {
 
 typeEffect();
 
+document.addEventListener("DOMContentLoaded" ,() => {
+  const animatedText = document.getElementById("about-me");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        animatedText.classList.add("visible");
+      };
+    });
+
+  });
+  observer.observe(animatedText)
+})
 
 
 
 
 
 
-
-
-
-// function typeEffect() {
-//   const currentText = texts[textIndex];
-
-//   // Ketik atau hapus karakter
-//   if (isDeleting) {
-//     charIndex--;
-//   } else {
-//     charIndex++;
-//   }
-
-//   // Perbarui teks yang ditampilkan
-//   typingElement.textContent = currentText.substring(0, charIndex);
-
-//   // Atur kecepatan mengetik/hapus
-//   let typingSpeed = isDeleting ? 100 : 100;
-
-//   // Jika selesai mengetik satu teks
-//   if (!isDeleting && charIndex === currentText.length) {
-//     isDeleting = true;
-//     typingSpeed = 2000; // Tunggu sebentar sebelum menghapus
-//   }
-
-//   // Jika selesai menghapus
-//   if (isDeleting && charIndex === 0) {
-//     isDeleting = false;
-//     textIndex = (textIndex + 1) % texts.length; // Pindah ke teks berikutnya
-//   }
-
-//   // Panggil fungsi lagi setelah jeda
-//   setTimeout(typeEffect, typingSpeed);
-// }
-
-// // Mulai efek mengetik
-// typeEffect();
 
