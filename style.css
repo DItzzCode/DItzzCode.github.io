@@ -8,7 +8,7 @@
 }
 
 body {
-  background: linear-gradient(to right , #01020e , #063161);
+  background: linear-gradient(to right , #02051f , #063161);
   background-color:#01020e;
   overflow-x: hidden;
 }
@@ -409,5 +409,5 @@ margin-left: 1em;
 }
 
 .contact-content > a:hover {
-  color:rgba(10 , 20 , 255 , 0.8);
+  color:rgba(10 , 20 , 255 , 1);
 }
