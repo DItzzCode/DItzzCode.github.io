@@ -81,12 +81,14 @@ typeEffect();
 
 document.addEventListener("DOMContentLoaded" ,() => {
   const animatedText = document.getElementById("about-me");
-
+  let see = false;
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if(entry.isIntersecting) {
+      if(entry.isIntersecting == !see) {
         animatedText.classList.add("visible");
-      };
+      } else if(entry.isIntersecting == see) {
+        animatedText.classList.remove("visible")
+      }
     });
 
   });
