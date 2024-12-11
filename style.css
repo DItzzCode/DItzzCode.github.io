@@ -314,12 +314,6 @@ color:white;
   letter-spacing: 2px;
 }
 
-.skill-content:hover {
-  transform: scale(1.050);
-  transition: 0.3s ease-out;
-}
-
-
 .contact {
   height: 100vh;
   margin-inline: auto;
