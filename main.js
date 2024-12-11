@@ -46,7 +46,7 @@ contact.addEventListener("click" , (e) => {
 
 const typingElement = document.getElementById("typing");
 
-const texts = ["Student", "Programmer", "Learner" , "FullStack"];
+const texts = ["Raditya","Student", "Programmer", "Learner" , "FullStack"];
 let textIndex = 0; // Indeks teks saat ini
 let charIndex = 0; // Indeks karakter saat ini
 let isDeleting = false; // Apakah teks sedang dihapus
